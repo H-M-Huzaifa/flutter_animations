@@ -1,4 +1,5 @@
 import 'dart:math' show pi;
+import 'package:animations/UI/rotating_cube.dart';
 import 'package:flutter/material.dart';
 
 import 'UI/card_animation.dart';
@@ -29,7 +30,7 @@ class _MyAppState extends State<MyApp>{
         useMaterial3: true,
       ),
       themeMode: ThemeMode.dark,
-      home: CardAnimation(),
+      home: RotatingCube(),
     );
   }
 }

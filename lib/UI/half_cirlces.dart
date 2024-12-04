@@ -1,5 +1,5 @@
 import 'dart:math' show pi;
-import 'package:animations/UI/tesseract.dart';
+import 'package:animations/UI/rotating_cube.dart';
 import 'package:flutter/material.dart';
 
 class HalfCirlces extends StatefulWidget {
@@ -142,7 +142,7 @@ class _HalfCirlcesState extends State<HalfCirlces>
                 ..rotateZ(_counterCLockwiseRotationAnimation.value),
               child: InkWell(
                 onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => TesseractApp(),));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => RotatingCube(),));
 
                 },
                 child: Row(
