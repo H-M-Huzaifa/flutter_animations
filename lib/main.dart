@@ -1,5 +1,10 @@
+import 'package:animations/UI/3d_drawer.dart';
+import 'package:animations/UI/animated_prompt.dart';
 import 'package:animations/UI/hero_animation/hero_animation.dart';
+import 'package:animations/UI/hexagon.dart';
+import 'package:animations/UI/home_screen.dart';
 import 'package:animations/UI/implicit_animation.dart';
+import 'package:animations/UI/polygon_custompaint.dart';
 import 'package:animations/UI/rotating_cube.dart';
 import 'package:animations/UI/tween_circle.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +37,7 @@ class _MyAppState extends State<MyApp>{
         useMaterial3: true,
       ),
       themeMode: ThemeMode.dark,
-      home: TweenCircle(),
+      home: HomeScreen(),
     );
   }
 }

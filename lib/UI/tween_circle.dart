@@ -1,3 +1,4 @@
+import 'package:animations/UI/polygon_custompaint.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
@@ -34,10 +35,15 @@ class _TweenCircleState extends State<TweenCircle> {
             builder: (context, Color? color, child) {
               return ColorFiltered(
                 colorFilter: ColorFilter.mode(color!, BlendMode.srcATop),
-                child: Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.width,
-                  color: Colors.red,
+                child: InkWell(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder:  (context) => PolygonCustompaint(),));
+                  },
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: MediaQuery.of(context).size.width,
+                    color: Colors.red,
+                  ),
                 ),
               );
             },
